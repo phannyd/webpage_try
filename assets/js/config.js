@@ -1,7 +1,7 @@
 // Personal information configuration
 const config = {
-  name: "Your Name",
-  email: "your.email@example.com",
-  field: "[field]",
-  institution: "Your Institution"
+  name: "Phanindra Dewan",
+  email: "phanindrad@iisc.ac.in",
+  field: "Biophysics",
+  institution: "Indian Institute of Science, Bengaluru, India"
 };
