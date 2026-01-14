@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Personal Webpage</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/config.js"></script>
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <h1 class="site-title"><a href="index.html">Your Name</a></h1>
+      <h1 class="site-title"><a href="index.html" id="site-name">Your Name</a></h1>
       <button id="nav-toggle" class="nav-toggle">☰</button>
       <nav id="site-nav" class="site-nav">
         <a href="research.html">Research</a>
@@ -22,28 +23,52 @@
 
   <main class="container">
     <section class="hero">
-      <h2>Hi — I'm Your Name</h2>
-      <p>Researcher in [field]. My work focuses on interesting problems in X, Y, and Z.</p>
-      <p><a class="cta" href="research.html">See my research</a></p>
+      <h2>Hi — I'm <span id="hero-name">Your Name</span></h2>
+      <p>Researcher in <span id="field">[field]</span>. My work focuses on interesting problems in X, Y, and Z.</p>
+      <p><a class="cta" href="research.html">Research details</a></p>
     </section>
 
-    <section class="summary">
-      <h3>Research</h3>
-      <p>Short summary of research interests and active projects. Mention collaborators, labs, and links to projects or code.</p>
-    </section>
-
-    <section class="featured">
-      <h3>Selected Publications</h3>
+    <section class="interests">
+      <h3>Research Interests</h3>
+      <p>My research spans several key areas:</p>
       <ul>
-        <li><strong>Paper A</strong> — Short description. <a href="publications.html#paper-a">Details</a></li>
-        <li><strong>Paper B</strong> — Short description. <a href="publications.html#paper-b">Details</a></li>
+        <li><strong>Interest Area 1</strong> — Brief overview of this research direction</li>
+        <li><strong>Interest Area 2</strong> — Brief overview of this research direction</li>
+        <li><strong>Interest Area 3</strong> — Brief overview of this research direction</li>
+        <li><strong>Interest Area 4</strong> — Brief overview of this research direction</li>
       </ul>
+    </section>
+
+    <section class="latest-papers">
+      <h3>Latest Papers</h3>
+      <article>
+        <h4>Paper Title 1</h4>
+        <p><em>Authors including <span class="author-name">Your Name</span></em> — Conference/Journal, 2025</p>
+        <p>Brief abstract or description of the paper's contribution and findings.</p>
+        <p><a href="publications.html#paper-1">Details</a> · <a href="#">PDF</a> · <a href="#">Code</a></p>
+      </article>
+      
+      <article>
+        <h4>Paper Title 2</h4>
+        <p><em>Authors including <span class="author-name">Your Name</span></em> — Conference/Journal, 2024</p>
+        <p>Brief abstract or description of the paper's contribution and findings.</p>
+        <p><a href="publications.html#paper-2">Details</a> · <a href="#">PDF</a> · <a href="#">Code</a></p>
+      </article>
+      
+      <article>
+        <h4>Paper Title 3</h4>
+        <p><em>Authors including <span class="author-name">Your Name</span></em> — Preprint, 2024</p>
+        <p>Brief abstract or description of the paper's contribution and findings.</p>
+        <p><a href="publications.html#paper-3">Details</a> · <a href="#">arXiv</a></p>
+      </article>
+      
+      <p><a href="publications.html">See all publications →</a></p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© Your Name — <a href="contact.html">Contact</a></p>
+      <p>© <span id="footer-name">Your Name</span> — <a href="contact.html">Contact</a></p>
     </div>
   </footer>
 
